@@ -2,10 +2,11 @@
   specifically for the Evil Mad Scientist Hanukkah menorah
 
 PLAYTUNE interprets a sequence of simple commands ("note on", "note off", and "wait")
-that represents a polyphonic musical score without volume modulation. I've posted a
-general interrupt-driven version for Arduinos at https://github.com/LenShustek/arduino-playtune.
+that represents a polyphonic musical score without volume modulation. I've posted
+a general interrupt-driven version for Arduinos at 
+  https://github.com/LenShustek/arduino-playtune. 
 There is a companion program for turning MIDI files into score commands at 
-https://github.com/LenShustek/miditones.
+  https://github.com/LenShustek/miditones.
 
 This much-simplified version of PLAYTUNE for the ATtiny processor uses polling 
 instead of timer-driven interrupts, avoids multiplication or division at runtime, 
