@@ -353,7 +353,7 @@ void tune_playnote (byte chan, byte note) {
     if (chan < NUM_CHANS) {
         if (note>MAX_NOTE) note=MAX_NOTE;
         decrement[chan] = pgm_read_dword(decrement_PGM + note);
-        accumulator[chan] = ACCUM_RESTART;
+        accumulator[chan] += ACCUM_RESTART; // changed from '=' to '+=' for better frequency accuracy
         playing[chan]=true;
     }
 }
